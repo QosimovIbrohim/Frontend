@@ -1,0 +1,35 @@
+table {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.tr-1 td{
+    background-color: bisque;
+    color: chocolate;
+    text-align: center;
+}
+
+.tr-1 td h1{
+    margin: 0;
+    
+}
+
+.tr-2 td {
+    padding-left: 10px;
+    font-size: 0.7rem;
+    background-color: rgb(98, 173, 248);
+}
+
+.tr1 td {
+    background-color: bisque;
+}
+
+.buttons {
+    text-align: center;
+    background-color: rgb(98, 173, 248);
+}
+
+.buttons td input{
+    width: 32%;
+    height: 8vh;
+}

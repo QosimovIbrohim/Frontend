@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TwoTask</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    
+<body>  
+    <form action="#">
+        <table border="3">
+            <tr class="tr-1">
+                <td colspan="2"><h1>Registration Form</h1></td>
+            </tr>
+            <tr class="tr-2">
+                <td><label for="enterName">Enter Name</label></td>
+                <td><input type="text" id="enterName"></td>
+            </tr>
+            <tr class="tr-2">
+                <td><label for="enterPassword">Enter Password</label></td>
+                <td><input type="password" name="pass" id="enterPassword"></td>
+            </tr>
+            <tr class="tr-2">
+                <td><label for="enterAddress">Enter Address</label></td>
+                <td><textarea name="message" id="enterAddress"  style="width: 60%; height: 10vh;"></textarea></td>
+            </tr>
+            <tr class="tr-2">
+                <td><label for="selectGame">Select Game</label></td>
+                <td>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Hokey">
+                    <label for="vehicle1">Hokey</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle2" value="Football">
+                    <label for="vehicle2">Football</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle3" value="Badminton">
+                    <label for="vehicle3">Badminton</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle4" value="Cricket">
+                    <label for="vehicle4">Cricket</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle5" value="Volleyball">
+                    <label for="vehicle5">Volleyball</label><br>
+                </td>
+            </tr>
+            <tr class="tr-2">
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="fav_language" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="fav_language" value="Female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr class="tr-2">
+                <td><label for="selectUrAge">Select ur age</label></td>
+                <td>
+                    <input type="number" id="selectUrAge" name="selectUrAge" min="1">
+                </td>
+            </tr>
+            <tr class="tr-2">
+                <td><label for="selectPhoto">Select Photo</label></td>
+                <td>
+                    <input type="file" id="selectPhoto" name="myfile">
+                </td>
+            </tr>
+            <tr class="buttons">
+                <td colspan="2">
+                    <input type="submit" value="Click Me">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit Form">
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
