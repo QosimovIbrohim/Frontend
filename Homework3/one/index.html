@@ -20,19 +20,66 @@
                 <!-- Last Name -->
                 <label class="lab" for="lname">Last Name</label>
                 <input type="text" id="lname" name="lname" placeholder="Enter Last Name"><br>
+                <!-- Date -->
+                <label class="lab" for="date">Date of Birth </label>
+						<select name="Date" id="">
+							<option hidden>Date</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="">...</option>
+						</select>
+						<select name="Month" id="" style="width: 80px">
+							<option hidden>Month</option>
+							<option value="Yanvar">Yanvar</option>
+							<option value="Fevral">Fevral</option>
+							<option value="Mart">Mart</option>
+							<option value="Aprel">Aprel</option>
+							<option value="May">May</option>
+							<option value="">...</option>
+						</select>
+						<select name="Year" id="">
+							<option hidden>Year</option>
+							<option value="2003">2003</option>
+							<option value="2004">2004</option>
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+							<option value="2009">2009</option>
+						</select>
                 <!-- Gender -->
                 <label class="lab" for="#">Gender</label>
                 <input type="radio" id="male" name="fav_language" value="Male">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="fav_language" value="Female">
                 <label for="female">Female</label><br>
+                <!-- Country -->
                 <label class="lab" for="country">Country</label>
                 <select id="country" name="cs">
-                    <option value="UZB">Uzbekistan</option>
+                    <option value="UZB" selected>Uzbekistan</option>
                     <option value="USA">United States</option>
                     <option value="KZH">Kazakhistan</option>
                     <option value="TJK">Tajkistan</option>
-                </select>
+                </select><br>
+                <!-- E-maiL -->
+                <label class="lab" for="emaiil">E-mail</label>
+                <input type="email" id="emaiil" name="Email" placeholder="Enter E-mail"><br>
+                <!-- Phone -->
+                <label class="lab" for="ph">Phone</label>
+                <input type="number" id="ph" name="phone" placeholder="Enter Phone"><br>
+                <!-- password -->
+                <label class="lab" for="pass">Password</label>
+                <input type="password" id="pass" name="ps-key"><br>
+                <!-- con password -->
+                <label class="lab" for="con-pass">Confirm-Password</label>
+                <input type="password" id="con-pass" name="con-ps-key">
             </div>
             <div class="box-2-2">
                 <input type="checkbox" id="vehicle1" name="vehicle1" value="iAgree">
