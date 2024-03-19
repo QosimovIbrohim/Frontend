@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="stlyles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box-1">
+            <p>Sign Up</p>
+        </div>
+        <div class="box-2">
+            <div class="box-2-1">
+                <!-- First Name -->
+                <label class="labl" for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter First Name"><br>
+                <!-- Last Name -->
+                <label class="lab" for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter Last Name"><br>
+                <!-- Gender -->
+                <label class="lab" for="#">Gender</label>
+                <input type="radio" id="male" name="fav_language" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="fav_language" value="Female">
+                <label for="female">Female</label><br>
+                <label class="lab" for="country">Country</label>
+                <select id="country" name="cs">
+                    <option value="UZB">Uzbekistan</option>
+                    <option value="USA">United States</option>
+                    <option value="KZH">Kazakhistan</option>
+                    <option value="TJK">Tajkistan</option>
+                </select>
+            </div>
+            <div class="box-2-2">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="iAgree">
+                <label for="vehicle1">I Agree to the Terms of use</label><br>
+            </div>
+        </div>
+        <div class="box-3">
+            <input type="submit" value="Submit" class="btn1">
+            <input type="submit" value="Cancel" class="btn2">
+        </div>
+    </div>
 </body>
 </html>
