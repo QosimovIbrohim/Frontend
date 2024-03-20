@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTask</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="boxes">
+            <div class="box-1">
+                <img src="./images/image.png" alt="telegram_img">
+            </div>
+    
+            <h1>Telegram</h1>   
+    
+            <p>Plase confirm your country code and enter your phone number</p>
+    
+            <fieldset style="margin-top: 40px;">
+                <legend>Country</legend>
+                <input list="country" name="country" value="Uzbekistan">
+                <datalist id="country">
+                    <option value="Uzbekistan">
+                    <option value="English">
+                    <option value="Rusian">
+                </datalist>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Your phone number</legend>
+                <input type="phone" name="phone" value="+998">
+            </fieldset>
+    
+            <div class="box-2">
+                <!-- I Agree to the Terms of use -->
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="signed">
+                <label for="vehicle1">Keep me signed in</label><br>
+            </div>
+            
+            <div class="box-3">
+                <img src="" alt="">
+            </div>
+            <p><a href="#">LOG IN BY QR CODE</a></p>
+        </div>
+    </div>
+</body>
+</html>

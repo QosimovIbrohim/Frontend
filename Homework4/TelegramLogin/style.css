@@ -1,0 +1,80 @@
+body {
+    background-color: rgba(28,26,26);
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 40%;
+    background-color: rgb(28, 26, 26);
+    height: 100vh;
+}
+
+.container .boxes {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.container .boxes .box-1 {
+    height: 25vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.container .boxes .box-1 img {
+    width: 47%;
+}
+
+.container .boxes h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.container .boxes p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.821);
+    font-size: 13px;
+}
+
+.container .boxes fieldset {
+    margin-top: 20px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+}
+
+.container .boxes fieldset legend {
+    font-size: 13px;
+}
+
+.container .boxes fieldset input {
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    background-color: rgb(28, 26, 26);
+    color: #fff;
+}
+
+.box-2 {
+    margin-top: 20px;
+}
+
+.box-2 input {
+    margin-left: 10px;
+}
+
+.box-2 label {
+    margin-left: 20px;
+}
+
+.box-3 {
+    margin-top: 65px;
+}
+
+.container .boxes p a {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: none;
+    font-size: 15px;
+}
