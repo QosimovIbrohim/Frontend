@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  height: 97vh;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: white;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.box{
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 3px solid rgb(77, 77, 169);
+  border-radius: 10px;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 15px;
+  color: white;
+  background-color: rgb(71, 109, 157);
+  border: 3px solid rgb(114, 148, 190);
+}
