@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 5px;
+    margin: 0 auto; 
+    background-color: #fff;
+    text-align: center;
+}
+
+.container div p {
+    display: inline-block;
+    padding: 5px;
+}
+
+.container div p a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(79, 126, 151);
+}
