@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 5px;
+    margin: 0 auto; 
+    width: 40%;
+    background-color: #fff;
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+}
+
+.container .box {
+    margin: 10px;
+    border: 3px solid rgb(79, 126, 151);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .box p {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    background-color: rgb(79, 126, 151);
+    border-radius: 5px;
+}
+
+.container div p a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
