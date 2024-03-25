@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+.f-c {
+  align-items: center;
+  justify-content: center;
+}
+.container p {
+  text-align: center;
+}
+.container .box1 {
+  margin-right: 100px;
+}
+.main-text {
+  margin: 0px 0px 10px 0px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.main-text:hover {
+  color: rgb(0, 0, 0);
+  background-color: cornsilk;
+}
+.container .box2 {
+  margin-right: 100px;
+}
+
+.gr-s {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 70%;
+}
+
+.mr-s {
+  text-align: right;
+  font-size: 20px;
+}
+
+.book {
+  margin: 0px 20px 0px 20px;
+  padding: 0 auto;
+}
