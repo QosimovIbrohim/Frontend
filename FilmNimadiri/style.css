@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.f-c{
+    align-items: center;
+    justify-content: center;
+}
+.f-l{
+    align-items: center;
+    justify-content: left;
+}
+.poster img {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 20%;
+}
+
