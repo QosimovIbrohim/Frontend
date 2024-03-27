@@ -1,0 +1,25 @@
+.container {
+    text-align: center;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+  }
+  
+  .tile {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  
