@@ -1,0 +1,10 @@
+.operator-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+  }

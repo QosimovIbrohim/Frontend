@@ -1,25 +1,36 @@
-.container {
-    text-align: center;
-  }
-  
-  .game-board {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    gap: 5px;
-    margin-bottom: 10px;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    background-color: #ccc;
-  }
-  
-  .tile {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-  }
-  
+.box {
+  border-style: solid;
+  border-color: blue;
+  border-width: 5px;
+  margin: 5px;
+}
+          
+.cell {
+  width: 60px;
+  height: 60px;
+  margin: 1px;
+  text-align: center;
+  background-color: limegreen;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 0px;
+}
+.cell-black {
+  width: 60px;
+  height: 60px;
+  margin: 1px;
+  text-align: center;
+  background-color: red;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 0px;
+}
+
+.empty {
+  background-color: white;
+}
+
+.body{
+  display: table-cell;
+  vertical-align: middle;
+}

@@ -1,34 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>15 Puzzle Game</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>15 Puzzle Game</h1>
-    <div id="game-board" class="game-board">
-        <button id="one" class="btn btn-secondary">2</button>
-        <button id="two" class="btn btn-secondary">3</button>
-        <button id="three" class="btn btn-secondary">4</button>
-        <button id="four" class="btn btn-secondary">5</button>
-        <button id="five" class="btn btn-secondary">6</button>
-        <button id="six" class="btn btn-secondary">7</button>
-        <button id="seven" class="btn btn-secondary">8</button>
-        <button id="eight" class="btn btn-secondary">1</button>
-        <button id="nine" class="btn btn-secondary">9</button>
-        <button id="ten" class="btn btn-secondary">11</button>
-        <button id="eleven" class="btn btn-secondary">10</button>
-        <button id="twelwe" class="btn btn-secondary">13</button>
-        <button id="thirdteen" class="btn btn-secondary">12</button>
-        <button id="fourteen" class="btn btn-secondary">15</button>
-        <button id="fifteen" class="btn btn-secondary">14</button>
-        <button id="sixteen" class="btn btn-secondary">ㅤㅤ</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+
+<html>
+    <head>
+        <title>15-Puzzle</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="margin:0px;" onload="startPuzzle()">
+      <h2>15-Puzzle</h2>
+      <p>
+      <button onclick="window.location.reload()">New Game</button>
+      </p>
+      <p>
+      </p>
+      <table class="box">
+        <tr>
+          <td id="0" class="cell" onclick="clickCell(this)">1</td>
+          <td id="1" class="cell" onclick="clickCell(this)">2</td>
+          <td id="2" class="cell" onclick="clickCell(this)">3</td>
+          <td id="3" class="cell" onclick="clickCell(this)">4</td>
+        </tr>
+        <tr>
+          <td id="4" class="cell" onclick="clickCell(this)">5</td>
+          <td id="5" class="cell" onclick="clickCell(this)">6</td>
+          <td id="6" class="cell" onclick="clickCell(this)">7</td>
+          <td id="7" class="cell" onclick="clickCell(this)">8</td>
+        </tr>
+        <tr>
+          <td id="8" class="cell" onclick="clickCell(this)">9</td>
+          <td id="9" class="cell" onclick="clickCell(this)">10</td>
+          <td id="10" class="cell" onclick="clickCell(this)">11</td>
+          <td id="11" class="cell" onclick="clickCell(this)">12</td>
+        </tr>
+        <tr>
+          <td id="12" class="cell" onclick="clickCell(this)">13</td>
+          <td id="13" class="cell" onclick="clickCell(this)">14</td>
+          <td id="14" class="cell" onclick="clickCell(this)">15</td>
+          <td id="15" class="cell" onclick="clickCell(this)"></td>
+        </tr>
+      </table>
+    </body>
 </html>
