@@ -1,26 +1,53 @@
-var cards = [];
+let items = [];
+const itemForm = document.getElementById("itemForm");
+const itemTable = document
+  .getElementById("itemTable")
+  .getElementsByTagName("tbody")[0];
 
-function addCard() {
-    var card = {
-        Image: document.getElementById("img-path").value,
-        title: document.getElementById("crd-title").value,
-        desc: document.getElementById("txt-area").value
+itemForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const itemName = document.getElementById("itemName").value;
+  if (itemName.trim() !== "") {
+    const newItem = {
+      id: Date.now(),
+      name: itemName,
     };
-    cards.push(card);
-    ids++;
-    showCards();
+    items.push(newItem);
+    displayItems();
+    itemForm.reset();
+  }
+});
+
+function displayItems() {
+  itemTable.innerHTML = "";
+  items.forEach(function (item) {
+    const row = itemTable.insertRow();
+    row.innerHTML = `
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>
+                    <button onclick="editItem(${item.id})" class="btn btn-warning">Edit</button>
+                    <button onclick="deleteItem(${item.id}) class="btn btn-danger">Delete</button>
+                </td>
+            `;
+  });
 }
 
-function showCards() {
-    var container = document.querySelector('.container');
-    container.innerHTML = '';
-    cards.forEach(function(card) {
-        var cardElement = document.createElement('div');
-        cardElement.classList.add('card');
-        cardElement.style.width = '18rem';
+function editItem(id) {
+  const selectedItem = items.find((item) => item.id === id);
+  if (selectedItem) {
+    const newName = prompt("Enter new name for the item:", selectedItem.name);
+    if (newName !== null && newName.trim() !== "") {
+      selectedItem.name = newName;
+      displayItems();
+    }
+  }
+}
 
-        cardElement.innerHTML = "<img src="+card.Image+" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">"+card.title+"</h5><p class="card-text">"+card.desc"+</p></div><hr><div class="card-body flex f-c"><a href="#" class="btn btn-danger">Delete</a><a href="#" class="btn btn-primary">Update</a></div>";
-
-        container.appendChild(cardElement);
-    });
+function deleteItem(id) {
+  const index = items.findIndex((item) => item.id === id);
+  if (index !== -1) {
+    items.splice(index, 1);
+    displayItems();
+  }
 }

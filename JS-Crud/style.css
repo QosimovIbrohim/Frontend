@@ -1,14 +1,12 @@
-.flex{
-    display: flex !important;
+table {
+    border-collapse: collapse;
+    width: 100%;
 }
-.f-c{
-    justify-content: center !important;
-    align-items: center !important;
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
-
-.container{
-    margin-top: 50px  !important;
-}
-.f-b{
-    gap: 30px !important;
+th {
+    background-color: #f2f2f2;
 }
