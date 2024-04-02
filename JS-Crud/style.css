@@ -1,0 +1,14 @@
+.flex{
+    display: flex !important;
+}
+.f-c{
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.container{
+    margin-top: 50px  !important;
+}
+.f-b{
+    gap: 30px !important;
+}
