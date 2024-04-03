@@ -27,7 +27,7 @@ function displayItems() {
                 <td>${item.name}</td>
                 <td>
                     <button onclick="editItem(${item.id})" class="btn btn-warning">Edit</button>
-                    <button onclick="deleteItem(${item.id}) class="btn btn-danger">Delete</button>
+                    <button onclick="deleteItem(${item.id})" class="btn btn-danger">Delete</button>
                 </td>
             `;
   });
